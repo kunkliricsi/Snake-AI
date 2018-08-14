@@ -27,6 +27,8 @@ Also, there's a Utilities class, the job of which is to provide basic functions 
 As of today, there are two types of path finders implemented. A shortest and a longest path finder, the former uses the A*, while the latter uses the *\<insert-not-yet-implemented-algorithm\>* algorithm.
 
 ### Strategies
+#### StrategyHandler
+It's a collection of strategies. Executes all of the strategies it contains, in paralell if possible, then determines the best option of directions to go in, based on pre-set priorities/weights. Can also hold other strategy handlers creating a huge mayhem of strategy execution.
 #### Alternative~
 Goes through all the possible directions, returns the one in which its snake could go without dying.
 #### FollowTail~
